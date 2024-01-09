@@ -6,10 +6,27 @@
 //
 
 import Foundation
+import SwiftUI
 import Defaults
 
 // TODO: Add defaults
 extension Defaults.Keys {
-    static let quality = Key<Double>("quality", default: 0.8)
-    //           Key          Type   UserDefaults name   Default value
+    static let theme = Key<Theme>("theme", default: .dark)
+}
+
+enum Theme: String, CaseIterable, Defaults.Serializable {
+    case system = "System"
+    case light = "Light"
+    case dark = "Dark"
+    
+    var colorScheme: ColorScheme? {
+        switch self {
+        case .system:
+            return nil
+        case .light:
+            return .light
+        case .dark:
+            return .dark
+        }
+    }
 }

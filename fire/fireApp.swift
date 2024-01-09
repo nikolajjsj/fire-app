@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import Defaults
 
 @main
 struct fireApp: App {
+    @Default(.theme) private var theme
+    
     var body: some Scene {
         WindowGroup {
             AppView()
+                .preferredColorScheme(theme.colorScheme)
         }
     }
 }
