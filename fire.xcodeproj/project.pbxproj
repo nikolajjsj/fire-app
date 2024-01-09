@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		D1B7E4EB2B4D7A4B00E0C7AE /* fireApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B7E4EA2B4D7A4B00E0C7AE /* fireApp.swift */; };
 		D1B7E4EF2B4D7A4C00E0C7AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B7E4EE2B4D7A4C00E0C7AE /* Assets.xcassets */; };
+		D1B7E4FB2B4D7A6600E0C7AE /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = D1B7E4FA2B4D7A6600E0C7AE /* Defaults */; };
+		D1B7E4FE2B4D7A7C00E0C7AE /* Pow in Frameworks */ = {isa = PBXBuildFile; productRef = D1B7E4FD2B4D7A7C00E0C7AE /* Pow */; };
+		D1B7E5022B4D7AA200E0C7AE /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B7E5012B4D7AA200E0C7AE /* Defaults.swift */; };
 		D1B7E5052B4D7AC300E0C7AE /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B7E5042B4D7AC300E0C7AE /* AppView.swift */; };
 /* End PBXBuildFile section */
 
@@ -17,6 +20,7 @@
 		D1B7E4EA2B4D7A4B00E0C7AE /* fireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fireApp.swift; sourceTree = "<group>"; };
 		D1B7E4EE2B4D7A4C00E0C7AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1B7E4F02B4D7A4C00E0C7AE /* fire.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fire.entitlements; sourceTree = "<group>"; };
+		D1B7E5012B4D7AA200E0C7AE /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		D1B7E5042B4D7AC300E0C7AE /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -25,6 +29,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1B7E4FB2B4D7A6600E0C7AE /* Defaults in Frameworks */,
+				D1B7E4FE2B4D7A7C00E0C7AE /* Pow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,21 @@
 			path = views;
 			sourceTree = "<group>";
 		};
+		D1B7E5002B4D7A9700E0C7AE /* lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				D1B7E5012B4D7AA200E0C7AE /* Defaults.swift */,
+			);
+			path = lifecycle;
+			sourceTree = "<group>";
+		};
+		D1B7E5032B4D7AAF00E0C7AE /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,6 +103,10 @@
 			dependencies = (
 			);
 			name = fire;
+			packageProductDependencies = (
+				D1B7E4FA2B4D7A6600E0C7AE /* Defaults */,
+				D1B7E4FD2B4D7A7C00E0C7AE /* Pow */,
+			);
 			productName = fire;
 			productReference = D1B7E4E72B4D7A4B00E0C7AE /* fire.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +135,10 @@
 				Base,
 			);
 			mainGroup = D1B7E4DE2B4D7A4B00E0C7AE;
+			packageReferences = (
+				D1B7E4F92B4D7A6600E0C7AE /* XCRemoteSwiftPackageReference "Defaults" */,
+				D1B7E4FC2B4D7A7C00E0C7AE /* XCRemoteSwiftPackageReference "Pow" */,
+			);
 			productRefGroup = D1B7E4E82B4D7A4B00E0C7AE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1B7E5022B4D7AA200E0C7AE /* Defaults.swift in Sources */,
 				D1B7E4EB2B4D7A4B00E0C7AE /* fireApp.swift in Sources */,
 				D1B7E5052B4D7AC300E0C7AE /* AppView.swift in Sources */,
 			);
@@ -359,6 +389,37 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		D1B7E4F92B4D7A6600E0C7AE /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Defaults";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		D1B7E4FC2B4D7A7C00E0C7AE /* XCRemoteSwiftPackageReference "Pow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EmergeTools/Pow";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D1B7E4FA2B4D7A6600E0C7AE /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1B7E4F92B4D7A6600E0C7AE /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
+		};
+		D1B7E4FD2B4D7A7C00E0C7AE /* Pow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1B7E4FC2B4D7A7C00E0C7AE /* XCRemoteSwiftPackageReference "Pow" */;
+			productName = Pow;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D1B7E4DF2B4D7A4B00E0C7AE /* Project object */;
 }
