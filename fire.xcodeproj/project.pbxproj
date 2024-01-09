@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D17C06C72B4DAF92002ED7CE /* financial_utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17C06C62B4DAF92002ED7CE /* financial_utils.swift */; };
 		D1B7E4EB2B4D7A4B00E0C7AE /* fireApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B7E4EA2B4D7A4B00E0C7AE /* fireApp.swift */; };
 		D1B7E4EF2B4D7A4C00E0C7AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B7E4EE2B4D7A4C00E0C7AE /* Assets.xcassets */; };
 		D1B7E4FB2B4D7A6600E0C7AE /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = D1B7E4FA2B4D7A6600E0C7AE /* Defaults */; };
 		D1B7E4FE2B4D7A7C00E0C7AE /* Pow in Frameworks */ = {isa = PBXBuildFile; productRef = D1B7E4FD2B4D7A7C00E0C7AE /* Pow */; };
 		D1B7E5022B4D7AA200E0C7AE /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B7E5012B4D7AA200E0C7AE /* Defaults.swift */; };
 		D1B7E5052B4D7AC300E0C7AE /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B7E5042B4D7AC300E0C7AE /* AppView.swift */; };
+		D1B7E5092B4D7B7800E0C7AE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B7E5082B4D7B7700E0C7AE /* SettingsView.swift */; };
+		D1B7E50B2B4D7B9500E0C7AE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B7E50A2B4D7B9500E0C7AE /* HomeView.swift */; };
+		D1B7E50E2B4D7C8600E0C7AE /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B7E50D2B4D7C8600E0C7AE /* DetailsView.swift */; };
+		D1B7E5112B4D936000E0C7AE /* ROIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B7E5102B4D936000E0C7AE /* ROIView.swift */; };
+		D1B7E5132B4D939000E0C7AE /* FIREView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B7E5122B4D939000E0C7AE /* FIREView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D17C06C62B4DAF92002ED7CE /* financial_utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = financial_utils.swift; sourceTree = "<group>"; };
 		D1B7E4E72B4D7A4B00E0C7AE /* fire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B7E4EA2B4D7A4B00E0C7AE /* fireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fireApp.swift; sourceTree = "<group>"; };
 		D1B7E4EE2B4D7A4C00E0C7AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1B7E4F02B4D7A4C00E0C7AE /* fire.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fire.entitlements; sourceTree = "<group>"; };
 		D1B7E5012B4D7AA200E0C7AE /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		D1B7E5042B4D7AC300E0C7AE /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		D1B7E5082B4D7B7700E0C7AE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D1B7E50A2B4D7B9500E0C7AE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D1B7E50D2B4D7C8600E0C7AE /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		D1B7E5102B4D936000E0C7AE /* ROIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROIView.swift; sourceTree = "<group>"; };
+		D1B7E5122B4D939000E0C7AE /* FIREView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIREView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D17C06C52B4DAF80002ED7CE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D17C06C62B4DAF92002ED7CE /* financial_utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		D1B7E4DE2B4D7A4B00E0C7AE = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +76,11 @@
 		D1B7E4E92B4D7A4B00E0C7AE /* fire */ = {
 			isa = PBXGroup;
 			children = (
+				D1B7E5002B4D7A9700E0C7AE /* lifecycle */,
 				D1B7E4EA2B4D7A4B00E0C7AE /* fireApp.swift */,
 				D1B7E4FF2B4D7A8F00E0C7AE /* views */,
+				D1B7E5032B4D7AAF00E0C7AE /* models */,
+				D17C06C52B4DAF80002ED7CE /* Utils */,
 				D1B7E4EE2B4D7A4C00E0C7AE /* Assets.xcassets */,
 				D1B7E4F02B4D7A4C00E0C7AE /* fire.entitlements */,
 			);
@@ -67,6 +90,9 @@
 		D1B7E4FF2B4D7A8F00E0C7AE /* views */ = {
 			isa = PBXGroup;
 			children = (
+				D1B7E50C2B4D7C7D00E0C7AE /* Details */,
+				D1B7E5072B4D7B7000E0C7AE /* Home */,
+				D1B7E5062B4D7B6B00E0C7AE /* Settings */,
 				D1B7E5042B4D7AC300E0C7AE /* AppView.swift */,
 			);
 			path = views;
@@ -85,6 +111,40 @@
 			children = (
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		D1B7E5062B4D7B6B00E0C7AE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D1B7E5082B4D7B7700E0C7AE /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D1B7E5072B4D7B7000E0C7AE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D1B7E50F2B4D934C00E0C7AE /* Sections */,
+				D1B7E50A2B4D7B9500E0C7AE /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D1B7E50C2B4D7C7D00E0C7AE /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				D1B7E50D2B4D7C8600E0C7AE /* DetailsView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		D1B7E50F2B4D934C00E0C7AE /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				D1B7E5102B4D936000E0C7AE /* ROIView.swift */,
+				D1B7E5122B4D939000E0C7AE /* FIREView.swift */,
+			);
+			path = Sections;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +225,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1B7E5022B4D7AA200E0C7AE /* Defaults.swift in Sources */,
+				D17C06C72B4DAF92002ED7CE /* financial_utils.swift in Sources */,
+				D1B7E5092B4D7B7800E0C7AE /* SettingsView.swift in Sources */,
+				D1B7E5132B4D939000E0C7AE /* FIREView.swift in Sources */,
+				D1B7E5112B4D936000E0C7AE /* ROIView.swift in Sources */,
 				D1B7E4EB2B4D7A4B00E0C7AE /* fireApp.swift in Sources */,
+				D1B7E50B2B4D7B9500E0C7AE /* HomeView.swift in Sources */,
 				D1B7E5052B4D7AC300E0C7AE /* AppView.swift in Sources */,
+				D1B7E50E2B4D7C8600E0C7AE /* DetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
