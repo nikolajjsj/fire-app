@@ -26,17 +26,14 @@ struct FIREView: View {
             Text(
                 yearsUntilFIRE <= 0
                 ? "Congratulations you've achieved FIRE with investments valued to: \(neededInvestment, format: .currency(code: currency))"
-                : "FIRE in \(yearsUntilFIRE, format: .number) years, with investments valued to: \(neededInvestment, format: .currency(code: currency))"
+                : "You can go FIRE in \(yearsUntilFIRE, format: .number) years, with investments valued to: \(neededInvestment, format: .currency(code: currency))"
             )
-            .font(.title3)
-            .fontWeight(.heavy)
+            .fontWeight(.bold)
             
-            HStack {
-                Text("Withdrawal rate").frame(minWidth: 100, alignment: .leading)
-                Slider(value: $withdrawalRate, in: 1...10, step: 0.1) {
-                    Text(withdrawalRate, format: .number)
+            Picker("Withdrawal rate (per year)", selection: $withdrawalRate) {
+                ForEach(Array(1...100).map({ Double($0) / 10.0 }), id: \.self) { rate in
+                    Text(rate / 100, format: .percent).tag(rate)
                 }
-                Text(withdrawalRate / 100, format: .percent).frame(minWidth: 50, alignment: .trailing)
             }
         }
     }
