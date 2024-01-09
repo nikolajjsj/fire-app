@@ -8,18 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		D1B7E4EB2B4D7A4B00E0C7AE /* fireApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B7E4EA2B4D7A4B00E0C7AE /* fireApp.swift */; };
-		D1B7E4ED2B4D7A4B00E0C7AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B7E4EC2B4D7A4B00E0C7AE /* ContentView.swift */; };
 		D1B7E4EF2B4D7A4C00E0C7AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B7E4EE2B4D7A4C00E0C7AE /* Assets.xcassets */; };
-		D1B7E4F32B4D7A4C00E0C7AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B7E4F22B4D7A4C00E0C7AE /* Preview Assets.xcassets */; };
+		D1B7E5052B4D7AC300E0C7AE /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B7E5042B4D7AC300E0C7AE /* AppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D1B7E4E72B4D7A4B00E0C7AE /* fire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B7E4EA2B4D7A4B00E0C7AE /* fireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fireApp.swift; sourceTree = "<group>"; };
-		D1B7E4EC2B4D7A4B00E0C7AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D1B7E4EE2B4D7A4C00E0C7AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1B7E4F02B4D7A4C00E0C7AE /* fire.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fire.entitlements; sourceTree = "<group>"; };
-		D1B7E4F22B4D7A4C00E0C7AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D1B7E5042B4D7AC300E0C7AE /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,20 +51,19 @@
 			isa = PBXGroup;
 			children = (
 				D1B7E4EA2B4D7A4B00E0C7AE /* fireApp.swift */,
-				D1B7E4EC2B4D7A4B00E0C7AE /* ContentView.swift */,
+				D1B7E4FF2B4D7A8F00E0C7AE /* views */,
 				D1B7E4EE2B4D7A4C00E0C7AE /* Assets.xcassets */,
 				D1B7E4F02B4D7A4C00E0C7AE /* fire.entitlements */,
-				D1B7E4F12B4D7A4C00E0C7AE /* Preview Content */,
 			);
 			path = fire;
 			sourceTree = "<group>";
 		};
-		D1B7E4F12B4D7A4C00E0C7AE /* Preview Content */ = {
+		D1B7E4FF2B4D7A8F00E0C7AE /* views */ = {
 			isa = PBXGroup;
 			children = (
-				D1B7E4F22B4D7A4C00E0C7AE /* Preview Assets.xcassets */,
+				D1B7E5042B4D7AC300E0C7AE /* AppView.swift */,
 			);
-			path = "Preview Content";
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +124,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1B7E4F32B4D7A4C00E0C7AE /* Preview Assets.xcassets in Resources */,
 				D1B7E4EF2B4D7A4C00E0C7AE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +135,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1B7E4ED2B4D7A4B00E0C7AE /* ContentView.swift in Sources */,
 				D1B7E4EB2B4D7A4B00E0C7AE /* fireApp.swift in Sources */,
+				D1B7E5052B4D7AC300E0C7AE /* AppView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,11 +265,12 @@
 				CODE_SIGN_ENTITLEMENTS = fire/fire.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"fire/Preview Content\"";
 				DEVELOPMENT_TEAM = YRQMPX5YW2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "FIRE Calculator";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -288,11 +285,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikolajjsj.fire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,11 +304,12 @@
 				CODE_SIGN_ENTITLEMENTS = fire/fire.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"fire/Preview Content\"";
 				DEVELOPMENT_TEAM = YRQMPX5YW2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "FIRE Calculator";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -330,7 +328,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikolajjsj.fire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,6 +358,7 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
 	};
 	rootObject = D1B7E4DF2B4D7A4B00E0C7AE /* Project object */;
 }
